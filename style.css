@@ -140,6 +140,7 @@ main {
 /* Image margin between text. */
 
 .cart-button button img {
+    width: 20px;
     margin-right: 10px;
 }
 
