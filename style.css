@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    caret-color: transparent;
+    background-color: hsl(30, 38%, 92%);
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    width: 40rem;
+}
+
+.product-image {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.product-image img {
+    width: 20rem;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+/* Position & Style of the right container. */
+
+.right-container {
+    gap: 30px;
+    width: 20rem;
+    padding: 35px;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+/* -------------------- Style & Position of the text elements inside the right container. -------------------- */
+
+/* Width of the text elements. */
+
+.right-container h1,
+.right-container h2,
+.right-container p,
+.right-container td {
+    width: 100%;
+}
+
+/* H2 Style. */
+
+.right-container h2 {
+    font-size: 0.875rem;
+    font-weight: 500;
+    letter-spacing: 0.3125rem;
+    text-transform: uppercase;
+    color: hsl(228, 12%, 48%);
+    font-family: "Montserrat", sans-serif;
+}
+
+/* H1 Style. */
+
+.right-container h1 {
+    font-size: 2.2rem;
+    line-height: 2rem;
+    font-weight: 700;
+    color: hsl(212, 21%, 14%);
+    font-family: "Fraunces", serif;
+}
+
+/* P Style. */
+
+.right-container p {
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    color: hsl(228, 12%, 48%);
+    font-family: "Montserrat", sans-serif;
+}
+
+/* First Child Style. */
+
+.right-container td:nth-child(1) {
+    font-size: 2.1875rem;
+    font-weight: 700;
+    color: hsl(158, 36%, 37%);
+    font-family: "Fraunces", serif;
+}
+
+/* Second Child Position. */
+
+.right-container table {
+    width: 210px;
+}
+
+/* Second Child Style. */
+
+.right-container td:nth-child(2) {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* -------------------- Style & Position of the button box element in the right container. -------------------- */
+
+/* Box Position. */
+
+.cart-button button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Box Style. */
+
+.cart-button button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+    background-color: hsl(158, 36%, 37%);
+}
+
+/* Image margin between text. */
+
+.cart-button button img {
+    margin-right: 10px;
+}
+
+/* Box Text Style. */
+
+.cart-button button {
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Box Text Style Hover. */
+
+.cart-button button:hover {
+    background-color: hsl(156.32, 42.22%, 17.65%);
+}
+
+@media only screen and (max-width: 768px) {
+
+    .product-image-desktop {
+        display: none;
+    }
+
+    main {
+        display: block;
+        width: 100vw;
+    }
+    
+    .product-image img {
+        width: 90vw;
+        height: 35vh;
+        margin: auto;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: initial;
+    }
+
+    .right-container {
+        gap: 15px;
+        width: 90vw;
+        height: 60vh;
+        margin: auto;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+        border-top-right-radius: initial;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .product-image-mobile {
+        display: none;
+    }
+}
