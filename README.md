@@ -1,4 +1,4 @@
-# 😶‍🌫️ Frontend Mentor - Recipe page solution
+# 😶‍🌫️ Product Preview Card Componenet - Page Solution
 
 This is my first solution to the [Product preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa/hub) and took me 3 hours to complete. Frontend Mentor challenges help you improve your coding skills by building realistic projects. If you are a beginner you really need to try this!
 
